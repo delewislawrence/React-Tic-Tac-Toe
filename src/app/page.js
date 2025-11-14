@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { Analytics } from "@vercel/analytics/next"
 
-<Analytics />
 function Square ({value, onClick}) {
 return <button className="square" onClick={onClick}>
 {value}
@@ -98,6 +97,7 @@ return (<li key={move + Math.random()}>
 });
 
  return <div className="game">
+  <Analytics />
   <div className="game-board">
   <Board squares= {currentSquares} xIsNext= {xIsNext} onPlay={handlePlay}/>
 </div>
